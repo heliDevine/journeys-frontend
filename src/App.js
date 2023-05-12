@@ -1,16 +1,16 @@
 import JourneyGrid from './components/JourneyGrid';
 import NavBar from './components/NavBar';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <NavBar />
-      <div className="container"></div>
+      <div className="container" />
       <h1>Journeys App</h1>
 
       <JourneyGrid />
     </div>
   );
-}
+};
 
 export default App;
