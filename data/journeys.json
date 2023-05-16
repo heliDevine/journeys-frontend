@@ -1,0 +1,81 @@
+{
+  "journeys": [
+    {
+      "id": "645ceb81b5c3d3bd6c33082b",
+      "departureStationName": "Töölöntulli",
+      "returnStationName": "Pasilan asema",
+      "distance": 1870,
+      "duration": 611
+    },
+    {
+      "id": "645ceb81b5c3d3bd6c33082c",
+      "departureStationName": "Näkinsilta",
+      "returnStationName": "Vilhonvuorenkatu",
+      "distance": 1025,
+      "duration": 399
+    },
+    {
+      "id": "645ceb81b5c3d3bd6c33082d",
+      "departureStationName": "Viiskulma",
+      "returnStationName": "Hernesaarenranta",
+      "distance": 4318,
+      "duration": 2009
+    },
+    {
+      "id": "645ceb81b5c3d3bd6c33082e",
+      "departureStationName": "Viiskulma",
+      "returnStationName": "Hernesaarenranta",
+      "distance": 1400,
+      "duration": 350
+    },
+    {
+      "id": "645ceb81b5c3d3bd6c33082f",
+      "departureStationName": "Koskelan varikko",
+      "returnStationName": "Paavalinpuisto",
+      "distance": 1713,
+      "duration": 366
+    },
+    {
+      "id": "645ceb81b5c3d3bd6c33082a",
+      "departureStationName": "Laajalahden aukio",
+      "returnStationName": "Teljäntie",
+      "distance": 2043,
+      "duration": 500
+    },
+    {
+      "id": "645ceb81b5c3d3bd6c33082b",
+      "departureStationName": "Töölöntulli",
+      "returnStationName": "Pasilan asema",
+      "distance": 1870,
+      "duration": 611
+    },
+    {
+      "id": "645ceb81b5c3d3bd6c33082c",
+      "departureStationName": "Näkinsilta",
+      "returnStationName": "Vilhonvuorenkatu",
+      "distance": 1025,
+      "duration": 399
+    },
+    {
+      "id": "645ceb81b5c3d3bd6c33082d",
+      "departureStationName": "Viiskulma",
+      "returnStationName": "Hernesaarenranta",
+      "distance": 4318,
+      "duration": 2009
+    },
+    {
+      "id": "645ceb81b5c3d3bd6c33082e",
+      "departureStationName": "Viiskulma",
+      "returnStationName": "Hernesaarenranta",
+      "distance": 1400,
+      "duration": 350
+    },
+    {
+      "id": "645ceb81b5c3d3bd6c33082f",
+      "departureStationName": "Koskelan varikko",
+      "returnStationName": "Paavalinpuisto",
+      "distance": 1713,
+      "duration": 366
+    }
+  ]
+}

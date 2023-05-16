@@ -1,4 +1,4 @@
-import JourneyGrid from './components/JourneyGrid';
+import Journeys from './components/Journeys';
 import NavBar from './components/NavBar';
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
       <div className="container" />
       <h1>Journeys App</h1>
 
-      <JourneyGrid />
+      <Journeys />
     </div>
   );
 };
