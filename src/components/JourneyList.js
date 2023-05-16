@@ -5,7 +5,7 @@ const JourneyList = ({ journeys }) => {
         <div className="journey-summary" key={journey.id}>
           <p className="journey-text">
             Journey form {journey.departureStationName} to{' '}
-            {journey.returnStationName} was {journey.distance / 100} meters long
+            {journey.returnStationName} was {journey.distance / 1000} kilometres
             and lasted {Math.floor(journey.duration / 60)} minutes and{' '}
             {journey.duration % 60} seconds
           </p>

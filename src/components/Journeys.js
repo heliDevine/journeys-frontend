@@ -7,7 +7,7 @@ const Journeys = () => {
 
   useEffect(() => {
     const axiosJourneys = async () => {
-      const response = await axios.get('https://retoolapi.dev/JbM9u2/journeys');
+      const response = await axios.get('http://localhost:8080/journeys/');
       setJourneys(response.data);
     };
     axiosJourneys();
