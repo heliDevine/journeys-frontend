@@ -4,13 +4,22 @@ import JourneyList from './JourneyList';
 
 const Journeys = () => {
   const [journeys, setJourneys] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    const axiosJourneys = async () => {
-      const response = await axios.get('http://localhost:8080/journeys/');
-      setJourneys(response.data);
-    };
-    axiosJourneys();
+    setIsLoading(true);
+    axios
+      .get('http://localhost:8080/journeys/')
+      .then(res => {
+        setJourneys(prevState => [...res.data.content]);
+        setIsLoading(false);
+        console.log(res.data.content);
+        return res.data.content;
+      })
+      .catch(err => {
+        console.log(err);
+        setIsLoading(false);
+      });
   }, []);
 
   return (
