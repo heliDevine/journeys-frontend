@@ -16,8 +16,6 @@ const Journeys = () => {
         setJourneys(prevState => [...res.data.content]);
         setIsLoading(false);
         setLastPage(res.data.totalPages);
-        console.log(res.data);
-
         return res.data;
       })
       .catch(err => {
