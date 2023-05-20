@@ -6,8 +6,8 @@ const JourneyPopup = ({ selectedJourney, onClose }) => {
       <div className="popup-content">
         <h2>GREEN HELSINKI</h2>
         <p>
-          {selectedJourney.distance / 1000} kilometers and lasted{' '}
-          {Math.floor(selectedJourney.duration / 60).toFixed(1)} minutes and{' '}
+          {(selectedJourney.distance / 1000).toFixed(1)} kilometers and lasted{' '}
+          {Math.floor(selectedJourney.duration / 60)} minutes and{' '}
           {selectedJourney.duration % 60} seconds
         </p>
         <p>
