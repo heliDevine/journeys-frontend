@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import JourneyList from './JourneyList';
 
-const Journeys = ({ handleJourneySelect }) => {
+const Journeys = () => {
   const [journeys, setJourneys] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [page, setPage] = useState(0);
@@ -39,7 +39,7 @@ const Journeys = ({ handleJourneySelect }) => {
             >
               Prev
             </button>
-            <p>{page + 1}</p>
+            <p className="page_number">{page + 1}</p>
             <button
               className="pagination_button"
               disabled={page === lastPage - 1}

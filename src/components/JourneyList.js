@@ -1,17 +1,18 @@
+import React, { useState } from 'react';
 import moment from 'moment';
-import JourneyDetails from './JourneyDetails';
-import { useState } from 'react';
+import JourneyPopup from './JourneyPopup';
 
 const JourneyList = ({ journeys }) => {
-  const [showPopup, setShowPopup] = useState(false);
   const [selectedJourney, setSelectedJourney] = useState(null);
+  const [showPopup, setShowPopup] = useState(false);
 
   const handleJourneySelect = journey => {
     setSelectedJourney(journey);
     setShowPopup(true);
   };
 
-  const handlePopupClose = () => {
+  const handleClosePopup = () => {
+    setSelectedJourney(null);
     setShowPopup(false);
   };
 
@@ -24,7 +25,7 @@ const JourneyList = ({ journeys }) => {
             at {moment(journey.departureTime).format('HH:mm')} from{' '}
             {journey.departureStationName} to {journey.returnStationName} was{' '}
             <button
-              className="details-button"
+              className="info-button"
               type="button"
               onClick={() => handleJourneySelect(journey)}
             >
@@ -33,11 +34,10 @@ const JourneyList = ({ journeys }) => {
           </div>
         </div>
       ))}
-      {showPopup && (
-        <JourneyDetails
-          distance={selectedJourney.distance}
-          duration={selectedJourney.duration}
-          handlePopupClose={handlePopupClose}
+      {showPopup && selectedJourney && (
+        <JourneyPopup
+          selectedJourney={selectedJourney}
+          onClose={handleClosePopup}
         />
       )}
     </div>

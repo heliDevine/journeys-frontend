@@ -36,21 +36,30 @@ body {
 .journey_grid_container {
   display: flex;
   flex-direction: column;
-  margin: 0px;
-  padding: 0px;
+  justify-content: space-between;
+  margin: 20px;
+  border-color: #f8f32b;
+  padding: 10px;
 }
 
 .journey-summary {
-  display: flex;
   flex-direction: row;
-  padding: 5;
-  margin: 0;
 }
 .journey-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
-} /* journey_grid_container
-journey_grid_button */
+}
+.info-button {
+  background: #fafafa;
+  border: 1px solid #eaeaea;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 5px;
+}
 .pagination {
   display: flex;
   justify-content: center;
