@@ -1,31 +1,45 @@
 import moment from 'moment';
 import JourneyDetails from './JourneyDetails';
+import { useState } from 'react';
 
-const JourneyList = ({ journeys, onJourneySelect }) => {
+const JourneyList = ({ journeys }) => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedJourney, setSelectedJourney] = useState(null);
+
+  const handleJourneySelect = journey => {
+    setSelectedJourney(journey);
+    setShowPopup(true);
+  };
+
+  const handlePopupClose = () => {
+    setShowPopup(false);
+  };
+
   return (
     <div className="journey_grid_container">
       {journeys.map(journey => (
         <div className="journey-summary" key={journey.id}>
           <div className="journey-text">
             Journey on {moment(journey.departureTime).format('ddd Do MMM YYYY')}{' '}
-            at {moment(journey.departureTime).format('HH:mm')} form{' '}
+            at {moment(journey.departureTime).format('HH:mm')} from{' '}
             {journey.departureStationName} to {journey.returnStationName} was{' '}
-            <JourneyDetails
-              key={journey.id}
-              distance={journey.distance}
-              duration={journey.duration}
-              onJourneySelect={onJourneySelect}
-            />
+            <button
+              className="details-button"
+              type="button"
+              onClick={() => handleJourneySelect(journey)}
+            >
+              More Info
+            </button>
           </div>
-          <button
-            className="details-button"
-            type="button"
-            onClick={() => onJourneySelect(journey)}
-          >
-            more details
-          </button>
         </div>
       ))}
+      {showPopup && (
+        <JourneyDetails
+          distance={selectedJourney.distance}
+          duration={selectedJourney.duration}
+          handlePopupClose={handlePopupClose}
+        />
+      )}
     </div>
   );
 };

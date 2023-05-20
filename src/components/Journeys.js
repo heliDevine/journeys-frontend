@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import JourneyList from './JourneyList';
 
-const Journeys = () => {
+const Journeys = ({ handleJourneySelect }) => {
   const [journeys, setJourneys] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [page, setPage] = useState(0);
