@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome renders correctly 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Welcome to the App
+    </h1>
+    <p>
+      This is the welcome text component.
+    </p>
+  </div>
+</DocumentFragment>
+`;
