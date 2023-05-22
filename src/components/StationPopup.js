@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 export const StationPopup = ({ selectedStation, onClose }) => {
@@ -11,12 +10,12 @@ export const StationPopup = ({ selectedStation, onClose }) => {
     : `${((totalDistance / 1000) * 107.5).toFixed(0)} gCO2`;
 
   return (
-    <div className="popup">
+    <div className="popup-container">
       <div className="popup-content">
         <h2>GREEN HELSINKI</h2>
         <p>{displayDistance}</p>
         <p>CO2 emissions saved {emissionsSaved}</p>
-        <button className="close-button" onClick={onClose}>
+        <button className="popup-close-button" onClick={onClose}>
           Close
         </button>
       </div>

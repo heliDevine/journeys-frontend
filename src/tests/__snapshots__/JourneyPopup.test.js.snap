@@ -3,13 +3,13 @@
 exports[`JourneyPopup renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="popup"
+    class="popup-container"
   >
     <div
       class="popup-content"
     >
       <h2>
-        GREEN HELSINKI
+        Change this title
       </h2>
       <p>
         1.0 kilometers and lasted 50 minutes and 0 seconds
@@ -18,7 +18,7 @@ exports[`JourneyPopup renders correctly 1`] = `
         CO2 emissions saved by taking this journey by bike was 108gCO2
       </p>
       <button
-        class="close-button"
+        class="popup-close-button"
       >
         Close
       </button>

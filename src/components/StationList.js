@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { StationPopup } from './StationPopup';
+import { useState } from 'react';
+import StationPopup from './StationPopup';
 import PropTypes from 'prop-types';
 
 const StationList = ({ stations }) => {

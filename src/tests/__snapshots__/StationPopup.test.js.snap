@@ -3,7 +3,7 @@
 exports[`StationPopup renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="popup"
+    class="popup-container"
   >
     <div
       class="popup-content"
@@ -18,7 +18,7 @@ exports[`StationPopup renders correctly 1`] = `
         CO2 emissions saved 108 gCO2
       </p>
       <button
-        class="close-button"
+        class="popup-close-button"
       >
         Close
       </button>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useEffect, useState } from 'react';
 import JourneyList from './JourneyList';
 import axios from 'axios';
