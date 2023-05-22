@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JourneyPopup renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="popup"
+  >
+    <div
+      class="popup-content"
+    >
+      <h2>
+        GREEN HELSINKI
+      </h2>
+      <p>
+        1.0 kilometers and lasted 50 minutes and 0 seconds
+      </p>
+      <p>
+        CO2 emissions saved by taking this journey by bike was 108gCO2
+      </p>
+      <button
+        class="close-button"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

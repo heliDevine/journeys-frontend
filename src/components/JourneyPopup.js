@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const JourneyPopup = ({ selectedJourney, onClose }) => {
   return (
@@ -23,3 +24,11 @@ const JourneyPopup = ({ selectedJourney, onClose }) => {
 };
 
 export default JourneyPopup;
+
+JourneyPopup.propTypes = {
+  selectedJourny: PropTypes.shape({
+    distance: PropTypes.number.isRequired,
+    duration: PropTypes.number.isRequired,
+  }),
+  onClose: PropTypes.func.isRequired,
+};
