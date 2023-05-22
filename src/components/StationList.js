@@ -20,7 +20,7 @@ const StationList = ({ stations }) => {
     <div className="station_grid_container">
       {stations.map(station => (
         <div className="station-summary" key={station.id}>
-          <div className="station-text">
+          <div className="station-text" key={station.name}>
             Station name is {station.stationNameEN}
             <button
               className="info-button"
@@ -47,7 +47,7 @@ export default StationList;
 StationList.propTypes = {
   stations: PropTypes.arrayOf(
     PropTypes.shape({
-      stationName: PropTypes.string.isRequired,
+      stationNameEN: PropTypes.string.isRequired,
     }),
   ).isRequired,
 };

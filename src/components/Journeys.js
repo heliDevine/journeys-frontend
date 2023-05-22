@@ -1,6 +1,7 @@
-import axios from 'axios';
+import React from 'react';
 import { useEffect, useState } from 'react';
 import JourneyList from './JourneyList';
+import axios from 'axios';
 
 const Journeys = () => {
   const [journeys, setJourneys] = useState([]);

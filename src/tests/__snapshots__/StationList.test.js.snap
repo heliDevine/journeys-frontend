@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stations renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="station_grid_container"
+  >
+    <div
+      class="station-summary"
+    >
+      <div
+        class="station-text"
+      >
+        Station name is Test station 1
+        <button
+          class="info-button"
+          type="button"
+        >
+          More Info
+        </button>
+      </div>
+    </div>
+    <div
+      class="station-summary"
+    >
+      <div
+        class="station-text"
+      >
+        Station name is Test station 2
+        <button
+          class="info-button"
+          type="button"
+        >
+          More Info
+        </button>
+      </div>
+    </div>
+    <div
+      class="station-summary"
+    >
+      <div
+        class="station-text"
+      >
+        Station name is Test station 3
+        <button
+          class="info-button"
+          type="button"
+        >
+          More Info
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

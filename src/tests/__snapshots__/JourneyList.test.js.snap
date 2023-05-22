@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JourneyList renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="journey_grid_container"
+  >
+    <div
+      class="journey-summary"
+    >
+      <div
+        class="journey-text"
+      >
+        Journey on Invalid date at Invalid date from testName to TestName2 was 
+        <button
+          class="info-button"
+          type="button"
+        >
+          More Info
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
