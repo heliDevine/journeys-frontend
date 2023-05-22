@@ -22,6 +22,8 @@ const StationList = ({ stations }) => {
         <div className="station-summary" key={station.id}>
           <div className="station-text" key={station.name}>
             Station name is {station.stationNameEN}
+            totalDepartingJourneys: {station.totalDepartingJourneys}
+            totalReturnedJourneys {station.totalReturnedJourneys}
             <button
               className="info-button"
               type="button"
