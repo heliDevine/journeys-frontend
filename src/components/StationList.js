@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StationPopup } from './StationPopup';
+import PropTypes from 'prop-types';
 
 const StationList = ({ stations }) => {
   const [selectedStation, setSelectedStation] = useState(null);
@@ -42,3 +43,11 @@ const StationList = ({ stations }) => {
 };
 
 export default StationList;
+
+StationList.propTypes = {
+  stations: PropTypes.arrayOf(
+    PropTypes.shape({
+      stationName: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+};

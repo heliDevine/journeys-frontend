@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import moment from 'moment';
 import JourneyPopup from './JourneyPopup';
+import PropTypes from 'prop-types';
 
 const JourneyList = ({ journeys }) => {
   const [selectedJourney, setSelectedJourney] = useState(null);
@@ -45,3 +46,15 @@ const JourneyList = ({ journeys }) => {
 };
 
 export default JourneyList;
+
+JourneyList.propTypes = {
+  journeys: PropTypes.arrayOf(
+    PropTypes.shape({
+      departureTime: PropTypes.string.isRequired,
+      departureStationName: PropTypes.string.isRequired,
+      returnStationName: PropTypes.string.isRequired,
+      distance: PropTypes.number.isRequired,
+      duration: PropTypes.number.isRequired,
+    }),
+  ).isRequired,
+};

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const StationPopup = ({ selectedStation, onClose }) => {
   const totalDistance = selectedStation.totalJourneyDistanceFromStation;
@@ -21,4 +22,13 @@ export const StationPopup = ({ selectedStation, onClose }) => {
       </div>
     </div>
   );
+};
+
+export default StationPopup;
+
+StationPopup.propTypes = {
+  selectedStation: PropTypes.shape({
+    totalJourneyDistanceFromStation: PropTypes.number.isRequired,
+  }),
+  onClose: PropTypes.func.isRequired,
 };

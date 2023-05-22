@@ -26,7 +26,7 @@ const JourneyPopup = ({ selectedJourney, onClose }) => {
 export default JourneyPopup;
 
 JourneyPopup.propTypes = {
-  selectedJourny: PropTypes.shape({
+  selectedJourney: PropTypes.shape({
     distance: PropTypes.number.isRequired,
     duration: PropTypes.number.isRequired,
   }),

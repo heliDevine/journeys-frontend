@@ -28,7 +28,7 @@ describe('JourneyPopup', () => {
         onClose={validProps.onClose}
       />,
     );
-    const buttonElement = screen.getByText('Close');
+    const buttonElement = screen.getByRole('button');
     expect(buttonElement).toBeInTheDocument();
   });
 });

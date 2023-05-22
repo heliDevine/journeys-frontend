@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StationPopup renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="popup"
+  >
+    <div
+      class="popup-content"
+    >
+      <h2>
+        GREEN HELSINKI
+      </h2>
+      <p>
+        1.0 kilometers
+      </p>
+      <p>
+        CO2 emissions saved 108 gCO2
+      </p>
+      <button
+        class="close-button"
+      >
+        Close
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
