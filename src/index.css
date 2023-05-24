@@ -9,27 +9,21 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   text-align: center;
   color: white;
-  background: rgb(34, 53, 195);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 53, 195, 1) 21%,
-    rgba(16, 165, 173, 1) 45%,
-    rgba(61, 255, 39, 1) 100%
-  );
+  background: #2235c3;
+  background: linear-gradient(0deg, #2235c3 21%, #10a5ad 45%, #3dff27 100%);
   background-position: center 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
-.nav_bar {
+.nav-bar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  color: #2b2d42;
-  background-color: rgb(34, 53, 195);
+  justify-content: space-around;
+  background-color: #2235c3;
 }
-.nav_bar .links {
+.nav-bar .links {
   color: white;
   display: flex;
   align-items: flex-end;
@@ -42,11 +36,11 @@ body {
 .nav-bar-item {
   color: white;
 }
-.nav_bar a {
-  padding: 6px;
+.nav-bar a {
+  padding: 20px;
   text-decoration: none;
 }
-.nav_bar a:hover {
+.nav-bar a:hover {
   color: #2dfd4a;
 }
 /* journey grid */
@@ -144,4 +138,17 @@ body {
 .page_number {
   padding: 15px;
   font-weight: 700;
+}
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 120px 0 120px;
+  font-weight: 400;
+}
+.welcome-container a {
+  color: white;
+}
+.welcome-container a:hover {
+  color: #2235c3;
 }
