@@ -20,16 +20,15 @@ const StationList = ({ stations }) => {
     <div className="station_grid_container">
       {stations.map(station => (
         <div className="station-summary" key={station.id}>
-          <div className="station-text" key={station.name}>
-            Station name is {station.stationNameEN}
-            totalDepartingJourneys: {station.totalDepartingJourneys}
-            totalReturnedJourneys {station.totalReturnedJourneys}
+          <div className="station-text">
+            {station.stationNameEN} {'   |   '}
+            {station.stationAddressFI}
             <button
               className="info-button"
               type="button"
               onClick={() => handleStationSelect(station)}
             >
-              More Info
+              {station.stationNameEN}
             </button>
           </div>
         </div>

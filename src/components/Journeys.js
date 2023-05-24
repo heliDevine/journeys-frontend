@@ -39,7 +39,9 @@ const Journeys = () => {
             >
               Prev
             </button>
-            <p className="page_number">{page + 1}</p>
+            <p className="page_number">
+              {page + 1}/{lastPage}
+            </p>
             <button
               className="pagination_button"
               disabled={page === lastPage - 1}

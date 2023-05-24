@@ -11,7 +11,7 @@ exports[`Stations renders correctly 1`] = `
       <div
         class="station-text"
       >
-        Station name is Test station 1
+        Station name is Test station 1totalDepartingJourneys: totalReturnedJourneys 
         <button
           class="info-button"
           type="button"
@@ -26,7 +26,7 @@ exports[`Stations renders correctly 1`] = `
       <div
         class="station-text"
       >
-        Station name is Test station 2
+        Station name is Test station 2totalDepartingJourneys: totalReturnedJourneys 
         <button
           class="info-button"
           type="button"
@@ -41,7 +41,7 @@ exports[`Stations renders correctly 1`] = `
       <div
         class="station-text"
       >
-        Station name is Test station 3
+        Station name is Test station 3totalDepartingJourneys: totalReturnedJourneys 
         <button
           class="info-button"
           type="button"

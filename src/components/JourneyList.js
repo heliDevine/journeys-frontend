@@ -22,15 +22,15 @@ const JourneyList = ({ journeys }) => {
       {journeys.map(journey => (
         <div className="journey-summary" key={journey.id}>
           <div className="journey-text">
-            Journey on {moment(journey.departureTime).format('ddd Do MMM YYYY')}{' '}
-            at {moment(journey.departureTime).format('HH:mm')} from{' '}
-            {journey.departureStationName} to {journey.returnStationName} was{' '}
+            {moment(journey.departureTime).format('ddd Do MMM YYYY')} at{' '}
+            {moment(journey.departureTime).format('HH:mm')} from{' '}
+            {journey.departureStationName} to {journey.returnStationName}{' '}
             <button
               className="info-button"
               type="button"
               onClick={() => handleJourneySelect(journey)}
             >
-              More Info
+              more details
             </button>
           </div>
         </div>

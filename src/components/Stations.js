@@ -16,7 +16,6 @@ const Stations = () => {
         setStations(prevState => [...res.data.content]);
         setIsLoading(false);
         setLastPage(res.data.totalPages);
-        console.log(res.data);
         return res.data;
       })
       .catch(err => {
@@ -40,7 +39,9 @@ const Stations = () => {
             >
               Prev
             </button>
-            <p className="page_number">{page + 1}</p>
+            <p className="page_number">
+              {page + 1}/{lastPage}
+            </p>
             <button
               className="pagination_button"
               disabled={page === lastPage - 1}
