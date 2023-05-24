@@ -11,12 +11,12 @@ exports[`Stations renders correctly 1`] = `
       <div
         class="station-text"
       >
-        Station name is Test station 1totalDepartingJourneys: totalReturnedJourneys 
+        Test station 1    |      |    bike capacity: 
         <button
           class="info-button"
           type="button"
         >
-          More Info
+          Test station 1
         </button>
       </div>
     </div>
@@ -26,12 +26,12 @@ exports[`Stations renders correctly 1`] = `
       <div
         class="station-text"
       >
-        Station name is Test station 2totalDepartingJourneys: totalReturnedJourneys 
+        Test station 2    |      |    bike capacity: 
         <button
           class="info-button"
           type="button"
         >
-          More Info
+          Test station 2
         </button>
       </div>
     </div>
@@ -41,12 +41,12 @@ exports[`Stations renders correctly 1`] = `
       <div
         class="station-text"
       >
-        Station name is Test station 3totalDepartingJourneys: totalReturnedJourneys 
+        Test station 3    |      |    bike capacity: 
         <button
           class="info-button"
           type="button"
         >
-          More Info
+          Test station 3
         </button>
       </div>
     </div>

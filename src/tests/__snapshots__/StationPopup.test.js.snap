@@ -8,14 +8,11 @@ exports[`StationPopup renders correctly 1`] = `
     <div
       class="popup-content"
     >
-      <h2>
-        GREEN HELSINKI
-      </h2>
+      <h3>
+        Test station
+      </h3>
       <p>
-        1.0 kilometers
-      </p>
-      <p>
-        CO2 emissions saved 108 gCO2
+        In total 1000 journeys departed from Test station in May 2021. That's No total distance calculated cycled and  less CO2 emissions compared to driving same distance by an average car.
       </p>
       <button
         class="popup-close-button"

@@ -50,6 +50,8 @@ StationList.propTypes = {
   stations: PropTypes.arrayOf(
     PropTypes.shape({
       stationNameEN: PropTypes.string.isRequired,
+      stationAddressFI: PropTypes.string.isRequired,
+      stationCapacity: PropTypes.number.isRequired,
     }),
   ).isRequired,
 };

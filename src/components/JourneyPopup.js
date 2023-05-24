@@ -25,6 +25,8 @@ export default JourneyPopup;
 
 JourneyPopup.propTypes = {
   selectedJourney: PropTypes.shape({
+    departureStationName: PropTypes.string.isRequired,
+    returnStationName: PropTypes.string.isRequired,
     distance: PropTypes.number.isRequired,
     duration: PropTypes.number.isRequired,
   }),

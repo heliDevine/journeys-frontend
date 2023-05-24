@@ -31,7 +31,8 @@ export default StationPopup;
 
 StationPopup.propTypes = {
   selectedStation: PropTypes.shape({
-    totalJourneyDistanceFromStation: PropTypes.number.isRequired,
+    stationNameEN: PropTypes.string.isRequired,
+    totalDepartingJourneys: PropTypes.number.isRequired,
   }),
   onClose: PropTypes.func.isRequired,
 };

@@ -4,6 +4,8 @@ import JourneyPopup from '.././components/JourneyPopup';
 describe('JourneyPopup', () => {
   const validProps = {
     selectedJourney: {
+      departureStationName: 'Test departure station',
+      returnStationName: 'Test return station',
       distance: 1000,
       duration: 3000,
     },

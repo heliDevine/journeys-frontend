@@ -4,7 +4,8 @@ import StationPopup from '.././components/StationPopup';
 describe('StationPopup', () => {
   const validProps = {
     selectedStation: {
-      totalJourneyDistanceFromStation: 1000,
+      stationNameEN: 'Test station',
+      totalDepartingJourneys: 1000,
     },
     onClose: () => {},
   };

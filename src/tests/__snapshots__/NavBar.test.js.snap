@@ -3,28 +3,28 @@
 exports[`NavBar renders correctly 1`] = `
 <DocumentFragment>
   <nav
-    class="nav_bar"
+    class="nav-bar"
   >
-    <h1>
-      Hello from NavBar! 
-    </h1>
     <div
       class="links"
     >
       <a
+        class="nav-bar-item"
         href="/"
       >
-        welcome
+        Info
       </a>
       <a
+        class="nav-bar-item"
         href="/journeys"
       >
-        journeys
+        Journeys
       </a>
       <a
+        class="nav-bar-item"
         href="/stations"
       >
-        stations
+        Stations
       </a>
     </div>
   </nav>

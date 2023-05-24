@@ -8,14 +8,8 @@ exports[`JourneyPopup renders correctly 1`] = `
     <div
       class="popup-content"
     >
-      <h2>
-        Change this title
-      </h2>
       <p>
-        1.0 kilometers and lasted 50 minutes and 0 seconds
-      </p>
-      <p>
-        CO2 emissions saved by taking this journey by bike was 108gCO2
+        Journey from Test departure station to Test return station was 1.0 kilometers, lasted 50 minutes and 0 seconds. That's 108g less CO2 emissions compared to driving same distance by an average car.
       </p>
       <button
         class="popup-close-button"

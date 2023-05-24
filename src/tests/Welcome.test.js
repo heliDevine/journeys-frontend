@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
-import Welcome from '.././components/Welcome';
+import Info from '.././components/Info';
 
-describe('Welcome', () => {
+describe('Info', () => {
   it('renders correctly', () => {
-    const { asFragment } = render(<Welcome />);
+    const { asFragment } = render(<Info />);
 
-    expect(asFragment(<Welcome />)).toMatchSnapshot();
+    expect(asFragment(<Info />)).toMatchSnapshot();
   });
 });

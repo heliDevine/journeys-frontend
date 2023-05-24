@@ -11,12 +11,12 @@ exports[`JourneyList renders correctly 1`] = `
       <div
         class="journey-text"
       >
-        Journey on Invalid date at Invalid date from testName to TestName2 was 
+        Invalid date at Invalid date from testName to TestName2 
         <button
           class="info-button"
           type="button"
         >
-          More Info
+          more details
         </button>
       </div>
     </div>
