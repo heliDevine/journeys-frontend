@@ -4,9 +4,21 @@ import StationList from '.././components/StationList';
 describe('Stations', () => {
   const validProps = {
     stations: [
-      { stationNameEN: 'Test station 1' },
-      { stationNameEN: 'Test station 2' },
-      { stationNameEN: 'Test station 3' },
+      {
+        stationNameEN: 'Test station 1',
+        stationAddressFI: 'Test address1',
+        stationCapacity: 4,
+      },
+      {
+        stationNameEN: 'Test station 2',
+        stationAddressFI: 'Test address2',
+        stationCapacity: 5,
+      },
+      {
+        stationNameEN: 'Test station 3',
+        stationAddressFI: 'Test address3',
+        stationCapacity: 6,
+      },
     ],
   };
   it('renders correctly', () => {

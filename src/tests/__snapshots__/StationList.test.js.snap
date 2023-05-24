@@ -11,7 +11,7 @@ exports[`Stations renders correctly 1`] = `
       <div
         class="station-text"
       >
-        Test station 1    |      |    bike capacity: 
+        Test station 1    |   Test address1   |    bike capacity: 4
         <button
           class="info-button"
           type="button"
@@ -26,7 +26,7 @@ exports[`Stations renders correctly 1`] = `
       <div
         class="station-text"
       >
-        Test station 2    |      |    bike capacity: 
+        Test station 2    |   Test address2   |    bike capacity: 5
         <button
           class="info-button"
           type="button"
@@ -41,7 +41,7 @@ exports[`Stations renders correctly 1`] = `
       <div
         class="station-text"
       >
-        Test station 3    |      |    bike capacity: 
+        Test station 3    |   Test address3   |    bike capacity: 6
         <button
           class="info-button"
           type="button"

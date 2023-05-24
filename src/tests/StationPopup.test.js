@@ -16,10 +16,10 @@ describe('StationPopup', () => {
         onClose={validProps.onClose}
       />,
     );
-
     expect(asFragment()).toMatchSnapshot();
   });
-  it('checks that Button renders with correct text', () => {
+
+  it('checks that button is in the document', () => {
     render(
       <StationPopup
         selectedStation={validProps.selectedStation}
