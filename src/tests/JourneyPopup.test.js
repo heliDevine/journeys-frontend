@@ -18,11 +18,10 @@ describe('JourneyPopup', () => {
         onClose={validProps.onClose}
       />,
     );
-
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('Button renders with correct text', () => {
+  it('checks that button is in the document', () => {
     render(
       <JourneyPopup
         selectedJourney={validProps.selectedJourney}
