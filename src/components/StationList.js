@@ -23,6 +23,7 @@ const StationList = ({ stations }) => {
           <div className="station-text">
             {station.stationNameEN} {'   |   '}
             {station.stationAddressFI}
+            {'   |   '} bike capacity: {station.stationCapacity}
             <button
               className="info-button"
               type="button"
