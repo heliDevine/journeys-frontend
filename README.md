@@ -10,6 +10,9 @@ Backend repository can be found [here](https://github.com/heliDevine/journeys)
 To give this project a clear direction and a purpose which would bring value to the user and the client
 I added an enviromental aspect to the frontend application. This naturally fitted well to the City Bike's
 business model and helped to define the product's features.
+The journey popup shows saved CO2 emissions for each journey compared to a same distance driven in an average car and on station view it shows it based on the total distance of departed journeys.
+
+This application being MVP the feature is heavily simplified but it opens up the opportunities to expand idea further. For example user would get a popup of this calculation when a journey is completed. Adding a user log in where CityBike’s customers can add journeys and will add up to the total. The product could extend to have a social aspect of how stations compare to the others in the city and of course sharing and inspiring others which in turn would promote the CityBike’s services.
 
 ## Tech stack and tools:
 
@@ -57,7 +60,7 @@ Jest and React testing library tests can be run with
 
 **Improvements**
 
-- Styling, utilising either styled components or frontend libraries like Material UI to create better user interface and more structured code.
+- Styling, utilising either styled components or frontend libraries like Material UI to create better user interface and more structured code. The styling is not optimised for mobile devices.
 - Filtering and searching by date or station. Currently the UI is not convenient for this.
 - Add journey form as backend functionality is ready.
 - Testing, current testing methods are not the most robust and some test cases should be added for example "test button is disabled when page number is 0"
