@@ -28,9 +28,9 @@ React was a convenient choice to create a SPA and React router was used to creat
 
 Head to the [backend](https://github.com/heliDevine/journeys) repo and follow the instructions to get service running.
 
-On terminal window run: `git clone git@github.com:heliDevine/journeys-frontend.git`
+Clone this repo and run: `git clone git@github.com:heliDevine/journeys-frontend.git` in terminal window.
 
-and: `cd journeys-frontend`
+and navigate to the repo: `cd journeys-frontend`
 
 run:
 `npm install` this command pulls all dependencies that it needs to run, this takes a few moments, but after it's done run:
